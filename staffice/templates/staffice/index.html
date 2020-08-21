@@ -1,0 +1,985 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+    <title>Staffice </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,900" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'fonts/icomoon/style.css' %}">
+
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css'%}">
+    <link rel="stylesheet" href="{% static 'css/jquery-ui.css' %}">
+    <link rel="stylesheet" href="{% static 'css/owl.carousel.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/owl.theme.default.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/owl.theme.default.min.css' %}">
+
+    <link rel="stylesheet" href="{% static 'css/jquery.fancybox.min.css' %}">
+
+    <link rel="stylesheet" href="{% static 'css/bootstrap-datepicker.css' %}">
+
+    <link rel="stylesheet" href="{% static 'fonts/flaticon/font/flaticon.css' %}">
+
+    <link rel="stylesheet" href="{% static 'css/aos.css' %}">
+
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+</head>
+
+<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+
+    <div class="site-wrap">
+
+        <div class="site-mobile-menu site-navbar-target">
+            <div class="site-mobile-menu-header">
+                <div class="site-mobile-menu-close mt-3">
+                    <span class="icon-close2 js-menu-toggle"></span>
+                </div>
+            </div>
+            <div class="site-mobile-menu-body"></div>
+        </div>
+
+        <div class="top-bar py-3 bg-light" id="home-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-6 text-left">
+                        <ul class="social-media">
+                            <li><a href="#" class="p-2"><span class="icon-facebook"></span></a></li>
+                            <li><a href="#" class="p-2"><span class="icon-twitter"></span></a></li>
+                            <li><a href="#" class="p-2"><span class="icon-instagram"></span></a></li>
+                            <li><a href="#" class="p-2"><span class="icon-linkedin"></span></a></li>
+                        </ul>
+                    </div>
+                    <div class="col-6">
+                        <p class="mb-0 float-right">
+                            <span class="mr-3"><a href="tel:0711922328"> <span class="icon-phone mr-2"></span><span
+                                        class="d-none d-lg-inline-block">+ 254 711922328</span></a></span>
+                            <span><a href="mailto:stafficeconsulting@gmal.com"><span class="icon-envelope mr-2"></span><span
+                                        class="d-none d-lg-inline-block">stafficeconsulting@gmal.com</span></a></span>
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <header class="site-navbar py-4 bg-white js-sticky-header site-navbar-target" role="banner">
+
+            <div class="container">
+                <div class="row align-items-center">
+
+                    <div class="col-6 col-xl-2">
+                        <h1 class="mb-0 site-logo"><a href="{% url 'HomePage' %}" class="text-black h2 mb-0">Staffice<span
+                                    class="text-primary">.</span> </a></h1>
+                    </div>
+                    <div class="col-12 col-md-10 d-none d-xl-block">
+                        <nav class="site-navigation position-relative text-right" role="navigation">
+
+                            <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
+                                <li><a href="#home-section" class="nav-link">Home</a></li>
+                                <li><a href="#about-section" class="nav-link">About Us</a></li>
+                                <!-- <li><a href="#team-section" class="nav-link">Team</a></li> -->
+                                <li><a href="#services-section" class="nav-link">Services</a></li>
+                                <!-- <li><a href="#testimonials-section" class="nav-link">Testimonials</a></li> -->
+                                <li><a href="#contact-section" class="nav-link">Contact</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+
+
+                    <div class="col-6 d-inline-block d-xl-none ml-md-0 py-3" style="position: relative; top: 3px;"><a
+                            href="#" class="site-menu-toggle js-menu-toggle text-black float-right"><span
+                                class="icon-menu h3"></span></a></div>
+
+                </div>
+            </div>
+
+        </header>
+
+
+
+        <div class="site-blocks-cover overlay" style="background-image: url({% static 'images/xxx.jpg' %}); " data-aos="fade">
+            <div class="container">
+                <div class="row align-items-center justify-content-center">
+
+                    <div class="col-md-12" data-aos="fade-up" data-aos-delay="400">
+
+                        <div class="row mb-4">
+                            <div class="col-md-6" style="background: rgba(76, 175, 80, 0.5)">
+                                <h1>STAFFICE TRAINNING &amp; CONSUTANCY LTD</h1>
+                                <p class="mb-4">“Your Guaranteed Trainer &amp; Safety Partner”</p>
+                                <h5 class="text-black">Our vision</h5>
+                                <p class="mb-4">We envision in delivering sustainable human capital for the future</p>
+                                <h5 class="text-black">Our Mission</h5>
+                                <p class="mb-4">Our mission is to design and deliver high impact training programs, a wide range of consultancy
+                                services and research that produce outstanding human performance in your organizations</p>
+                                <div>
+                                    <a href="#contact-section" class="btn btn-primary mr-2 mb-2">Contact Us</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="site-section" id="about-section">
+            <div class="container">
+                <div class="row align-items-lg-center">
+                    <div class="col-md-6 mb-5 mb-lg-0 position-relative">
+                        <img src="{% static 'images/consult3.png' %}" class="img-fluid" alt="Image">
+                        <div class="experience">
+                            <span class="year">5 years</span>
+                            <span class="caption">of experience</span>
+                        </div>
+                    </div>
+                    <div class="col-md-5 ml-auto">
+                        <h3 class="section-sub-title">About Us</h3>
+                        <h2 class="section-title mb-3">Welcome To Staffice Training &amp; Consultancy </h2>
+                        <p class="mb-4">We are a one-stop Spring that provides a range of
+                        Solutions; in matters general training, on Learning &amp; Development Solutions with Business
+                        focus and more so, purposing to empowering by knowledge impartation, on General Safety and
+                        Consultancy Professional Services i.e. Disaster &amp; emergency Management, Counter terrorism,
+                        Fire &amp; safety, Customer care, First Aid , strategic management, interviewing and security
+                        Interrogation, Corporate Security management, Management scalar chain, Investigations
+                        amongst others.</p>
+                        <p class="mb-4">We apply a perfect combination of unique processes, expertise and technology to deliver
+                        solutions for your Entity and Organizational success accordingly.</p>
+                        <p><a href="{% static 'STC COMPANY PROFILE.pdf' %}" download="STC COMPANY PROFILE" class="btn btn-primary btn-black--hover">Learn More</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- <section class="site-section border-bottom" id="team-section">
+            <div class="container">
+                <div class="row mb-5">
+                    <div class="col-12 text-center">
+                        <h3 class="section-sub-title">Team</h3>
+                        <h2 class="section-title mb-3">Our Team</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 col-lg-4 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="100">
+                        <div class="person text-center">
+                            <img src="{% static 'images/person_2.jpg' %}" alt="Image" class="img-fluid rounded-circle w-50 mb-5">
+                            <h3>John Rooster</h3>
+                            <p class="position text-muted">Co-Founder, President</p>
+                            <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi at consequatur
+                                unde molestiae quidem provident voluptatum deleniti quo iste error eos est praesentium
+                                distinctio cupiditate tempore suscipit inventore deserunt tenetur.</p>
+                            <ul class="ul-social-circle">
+                                <li><a href="#"><span class="icon-facebook"></span></a></li>
+                                <li><a href="#"><span class="icon-twitter"></span></a></li>
+                                <li><a href="#"><span class="icon-linkedin"></span></a></li>
+                                <li><a href="#"><span class="icon-instagram"></span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="200">
+                        <div class="person text-center">
+                            <img src="{% static 'images/person_3.jpg' %}" alt="Image" class="img-fluid rounded-circle w-50 mb-5">
+                            <h3>Tom Sharp</h3>
+                            <p class="position text-muted">Co-Founder, COO</p>
+                            <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi at consequatur
+                                unde molestiae quidem provident voluptatum deleniti quo iste error eos est praesentium
+                                distinctio cupiditate tempore suscipit inventore deserunt tenetur.</p>
+                            <ul class="ul-social-circle">
+                                <li><a href="#"><span class="icon-facebook"></span></a></li>
+                                <li><a href="#"><span class="icon-twitter"></span></a></li>
+                                <li><a href="#"><span class="icon-linkedin"></span></a></li>
+                                <li><a href="#"><span class="icon-instagram"></span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="300">
+                        <div class="person text-center">
+                            <img src="{% static 'images/person_4.jpg' %}" alt="Image" class="img-fluid rounded-circle w-50 mb-5">
+                            <h3>Winston Hodson</h3>
+                            <p class="position text-muted">Marketing</p>
+                            <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi at consequatur
+                                unde molestiae quidem provident voluptatum deleniti quo iste error eos est praesentium
+                                distinctio cupiditate tempore suscipit inventore deserunt tenetur.</p>
+                            <ul class="ul-social-circle">
+                                <li><a href="#"><span class="icon-facebook"></span></a></li>
+                                <li><a href="#"><span class="icon-twitter"></span></a></li>
+                                <li><a href="#"><span class="icon-linkedin"></span></a></li>
+                                <li><a href="#"><span class="icon-instagram"></span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+
+        <section class="site-section bg-light">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 col-lg-12">
+                        <h2 class="section-title mb-3">Our Guiding Philosophy</h2>
+                        <div class=" box-with-humber">
+                            <p class="mb-4">Staffice Tranning and consultancy Limited is a training and consultancy company in the areas of
+                            human resource management, research and general management.</p>
+                            <p class="mb-4">It is a firm based on the principles of effectiveness, devotion and integrity. We are committed to
+                            create a strong and continuous improvement in human capital performance. We create a smart
+                            partnership to fully understand your unique business strategy, goals, needs, objectives and
+                            culture. Following that, your needs will be studied and a tailor-made solution will be designed
+                            for your organization. The core aims of our services is to build and sustain the skills and
+                            behaviours that are essential to your business successes.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="site-section">
+            <div class="container">
+                <div class="row mb-5">
+                    <div class="col-12">
+                        <h3 class="section-sub-title">How it works</h3>
+                        <h2 class="section-title mb-3">Our Strategic Intents</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 col-lg-4">
+                        <div class=" box-with-humber">
+                            <h2 class="text-black">EQUIP</h2>
+                            <p class="mb-4"><b>STAFFICE TRANNING &amp; CONSULTANCY LTD,</b> is dedicated to ensuring that, the
+                            client and the concerned partner and trainee, achieves the relevant Skills, knowledge and the
+                            right attitude to maximize the organizational expected human Potential.</p>
+                            <!-- <ul class="list-unstyled ul-check primary">
+                                <li>Lorem ipsum dolor sit amet.</li>
+                                <li>Lorem ipsum dolor sit amet.</li>
+                                <li>Lorem ipsum dolor sit amet.</li>
+                            </ul> -->
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4">
+                        <div class=" box-with-humber">
+                            <h2 class="text-black">ENGAGE</h2>
+                            <p class="mb-4">We provide and create relevant channels to involve the organizations and their staffs
+                            in a more productive and developmental ways.</p>
+                            <!-- <ul class="list-unstyled ul-check primary">
+                                <li>Lorem ipsum dolor sit amet.</li>
+                                <li>Lorem ipsum dolor sit amet.</li>
+                                <li>Lorem ipsum dolor sit amet.</li>
+                            </ul> -->
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4">
+                        <div class=" box-with-humber">
+                            <h2 class="text-black">EXECUTE</h2>
+                            <p class="mb-4">We carry out a data-backed actionable plans for perfect results through a viable
+                            and professional competent training.</p>
+                            <!-- <ul class="list-unstyled ul-check primary">
+                                <li>Lorem ipsum dolor sit amet.</li>
+                                <li>Lorem ipsum dolor sit amet.</li>
+                                <li>Lorem ipsum dolor sit amet.</li>
+                            </ul> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+        <section class="site-section border-bottom bg-light" id="services-section">
+            <div class="container">
+                <div class="row mb-5">
+                    <div class="col-12 text-center">
+                        <h3 class="section-sub-title">Services</h3>
+                        <h2 class="section-title mb-3">Our Training Solutions</h2>
+                    </div>
+                </div>
+                <div class="row align-items-stretch">
+                    <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up">
+                        <div class="unit-4 d-flex">
+                            <!-- <div class="unit-4-icon mr-4"><span class="text-primary icon-autorenew"></span></div> -->
+                            <div>
+                                <h3>1. Fundamentals to general Safety and Crime Prevention</h3>
+                                <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae
+                                    vitae eligendi at.</p> -->
+                                <!-- <p><a href="#">Learn More</a></p> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="100">
+                        <div class="unit-4 d-flex">
+                            <!-- <div class="unit-4-icon mr-4"><span class="text-primary icon-backspace"></span></div> -->
+                            <div>
+                                <h3>2. Drill and duties</h3>
+                                <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae
+                                    vitae eligendi at.</p>
+                                <p><a href="#">Learn More</a></p> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="200">
+                        <div class="unit-4 d-flex">
+                            <!-- <div class="unit-4-icon mr-4"><span class="text-primary icon-av_timer"></span></div> -->
+                            <div>
+                                <h3>3. Counter terrorism</h3>
+                                <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae
+                                    vitae eligendi at.</p>
+                                <p><a href="#">Learn More</a></p> -->
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="300">
+                        <div class="unit-4 d-flex">
+                            <!-- <div class="unit-4-icon mr-4"><span class="text-primary icon-beenhere"></span></div> -->
+                            <div>
+                                <h3>4. Disaster and emergency management</h3>
+                                <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae
+                                    vitae eligendi at.</p>
+                                <p><a href="#">Learn More</a></p> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="400">
+                        <div class="unit-4 d-flex">
+                            <!-- <div class="unit-4-icon mr-4"><span class="text-primary icon-business_center"></span></div> -->
+                            <div>
+                                <h3>5. Arms drills</h3>
+                                <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae
+                                    vitae eligendi at.</p>
+                                <p><a href="#">Learn More</a></p> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="500">
+                        <div class="unit-4 d-flex">
+                            <!-- <div class="unit-4-icon mr-4"><span class="text-primary icon-cloud_done"></span></div> -->
+                            <div>
+                                <h3>6. Law of Evidence</h3>
+                                <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae
+                                    vitae eligendi at.</p>
+                                <p><a href="#">Learn More</a></p> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="500">
+                        <div class="unit-4 d-flex">
+                            <!-- <div class="unit-4-icon mr-4"><span class="text-primary icon-cloud_done"></span></div> -->
+                            <div>
+                                <h3>7. Criminal Law</h3>
+                                <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae
+                                                        vitae eligendi at.</p>
+                                                    <p><a href="#">Learn More</a></p> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="500">
+                        <div class="unit-4 d-flex">
+                            <!-- <div class="unit-4-icon mr-4"><span class="text-primary icon-cloud_done"></span></div> -->
+                            <div>
+                                <h3>8. Labour Relations and Law</h3>
+                                <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae
+                                                        vitae eligendi at.</p>
+                                                    <p><a href="#">Learn More</a></p> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="500">
+                        <div class="unit-4 d-flex">
+                            <!-- <div class="unit-4-icon mr-4"><span class="text-primary icon-cloud_done"></span></div> -->
+                            <div>
+                                <h3>9. Human Resources Key Risk Indicators</h3>
+                                <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae
+                                                        vitae eligendi at.</p>
+                                                    <p><a href="#">Learn More</a></p> -->
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="site-section">
+            <div class="container">
+                <div class="row mb-5">
+                    <div class="col-12">
+                        <h3 class="section-sub-title">Our Consultancy</h3>
+                        <h2 class="section-title mb-3">Courses We Offer</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 col-lg-4" data-aos="fade-up">
+                        <div class=" box-with-humber">
+                            <h2 class="text-black">THE BALANCED SCORECARD</h2>
+                            <p class="mb-4">This course
+                            will show you how to build and implement a balanced scorecard strategic management system for your
+                            organization.</p>
+                            <!-- <ul class="list-unstyled ul-check primary">
+                                        <li>Lorem ipsum dolor sit amet.</li>
+                                        <li>Lorem ipsum dolor sit amet.</li>
+                                        <li>Lorem ipsum dolor sit amet.</li>
+                                    </ul> -->
+                        </div>
+                    </div>
+        
+                    <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                        <div class=" box-with-humber">
+                            <h2 class="text-black">CHANGE MANAGEMENT</h2>
+                            <p class="mb-4">We provide you the right skills to effectively manage change</p>
+                            <!-- <ul class="list-unstyled ul-check primary">
+                                        <li>Lorem ipsum dolor sit amet.</li>
+                                        <li>Lorem ipsum dolor sit amet.</li>
+                                        <li>Lorem ipsum dolor sit amet.</li>
+                                    </ul> -->
+                        </div>
+                    </div>
+        
+                    <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                        <div class=" box-with-humber">
+                            <h2 class="text-black">CUSTOMER CARE</h2>
+                            <p class="mb-4">We train you on skills such as effective use of the telephone in customer service etc.</p>
+                            <!-- <ul class="list-unstyled ul-check primary">
+                                        <li>Lorem ipsum dolor sit amet.</li>
+                                        <li>Lorem ipsum dolor sit amet.</li>
+                                        <li>Lorem ipsum dolor sit amet.</li>
+                                    </ul> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                        <div class=" box-with-humber">
+                            <h2 class="text-black">ENHANCED SELLING SKILLS TRAINING</h2>
+                            <p class="mb-4">This course
+                                will show you how to develop skills you can you to effectively sell</p>
+                            <!-- <ul class="list-unstyled ul-check primary">
+                                                        <li>Lorem ipsum dolor sit amet.</li>
+                                                        <li>Lorem ipsum dolor sit amet.</li>
+                                                        <li>Lorem ipsum dolor sit amet.</li>
+                                                    </ul> -->
+                        </div>
+                    </div>
+                
+                    <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="400">
+                        <div class=" box-with-humber">
+                            <h2 class="text-black">SUCCESSFUL NEGOTIATION SKILLS TRAINING</h2>
+                            <p class="mb-4">By the end of this negotiation training course, participants will have improved their negotiation skills</p>
+                            <!-- <ul class="list-unstyled ul-check primary">
+                                                        <li>Lorem ipsum dolor sit amet.</li>
+                                                        <li>Lorem ipsum dolor sit amet.</li>
+                                                        <li>Lorem ipsum dolor sit amet.</li>
+                                                    </ul> -->
+                        </div>
+                    </div>
+                
+                    <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="500">
+                        <div class=" box-with-humber">
+                            <h2 class="text-black">TRAINING OF TRAINERS</h2>
+                            <p class="mb-4">This course will equip the student with skills on how to be an effective trainer</p>
+                            <!-- <ul class="list-unstyled ul-check primary">
+                                                        <li>Lorem ipsum dolor sit amet.</li>
+                                                        <li>Lorem ipsum dolor sit amet.</li>
+                                                        <li>Lorem ipsum dolor sit amet.</li>
+                                                    </ul> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="600">
+                        <div class=" box-with-humber">
+                            <h2 class="text-black">CREATIVE TEAM BUILDING</h2>
+                            <p class="mb-4">This course
+                                will show you how to building & harmonize an acceptable organizational culture.</p>
+                            <!-- <ul class="list-unstyled ul-check primary">
+                                                        <li>Lorem ipsum dolor sit amet.</li>
+                                                        <li>Lorem ipsum dolor sit amet.</li>
+                                                        <li>Lorem ipsum dolor sit amet.</li>
+                                                    </ul> -->
+                        </div>
+                    </div>
+                
+                    <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="700">
+                        <div class=" box-with-humber">
+                            <h2 class="text-black">PRESENTATION SKILLS</h2>
+                            <p class="mb-4">We provide you with ways to achieving better results through effective presentations and much more</p>
+                            <!-- <ul class="list-unstyled ul-check primary">
+                                                        <li>Lorem ipsum dolor sit amet.</li>
+                                                        <li>Lorem ipsum dolor sit amet.</li>
+                                                        <li>Lorem ipsum dolor sit amet.</li>
+                                                    </ul> -->
+                        </div>
+                    </div>
+                
+                    <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="800">
+                        <div class=" box-with-humber">
+                            <h2 class="text-black">TIME MANAGEMENT AND WORK PLANNING</h2>
+                            <p class="mb-4">We train you on ways to achieving better results through effective planning & clarifying of objectives.</p>
+                            <!-- <ul class="list-unstyled ul-check primary">
+                                                        <li>Lorem ipsum dolor sit amet.</li>
+                                                        <li>Lorem ipsum dolor sit amet.</li>
+                                                        <li>Lorem ipsum dolor sit amet.</li>
+                                                    </ul> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="900">
+                        <div class=" box-with-humber">
+                            <h2 class="text-black">PROBLEM SOLVING, DECISION MAKING AND CONFLICT MANAGEMENT</h2>
+                            <p class="mb-4">We train you on effectively applying problem solving techniques.</p>
+                            <!-- <ul class="list-unstyled ul-check primary">
+                                                                        <li>Lorem ipsum dolor sit amet.</li>
+                                                                        <li>Lorem ipsum dolor sit amet.</li>
+                                                                        <li>Lorem ipsum dolor sit amet.</li>
+                                                                    </ul> -->
+                        </div>
+                    </div>
+                
+                    <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="1000">
+                        <div class=" box-with-humber">
+                            <h2 class="text-black">CREATIVITY, INNOVATION AND PERSONAL EFFECTIVENESS</h2>
+                            <p class="mb-4">We provide you with ways of developing a learning culture</p>
+                            <!-- <ul class="list-unstyled ul-check primary">
+                                                                        <li>Lorem ipsum dolor sit amet.</li>
+                                                                        <li>Lorem ipsum dolor sit amet.</li>
+                                                                        <li>Lorem ipsum dolor sit amet.</li>
+                                                                    </ul> -->
+                        </div>
+                    </div>
+                
+                    <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="1100">
+                        <div class=" box-with-humber">
+                            <h2 class="text-black">LEADERSHIP CAPACITY AND SKILLS DEVELOPMENT</h2>
+                            <p class="mb-4">We equip you with people management skills for managers & supervisors.</p>
+                            <!-- <ul class="list-unstyled ul-check primary">
+                                                                        <li>Lorem ipsum dolor sit amet.</li>
+                                                                        <li>Lorem ipsum dolor sit amet.</li>
+                                                                        <li>Lorem ipsum dolor sit amet.</li>
+                                                                    </ul> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="1200">
+                        <div class=" box-with-humber">
+                            <h2 class="text-black">SUPERVISORY SKILLS TRAINING</h2>
+                            <p class="mb-4">We train you on the Role & Responsibility of the Supervisor</p>
+                            <!-- <ul class="list-unstyled ul-check primary">
+                                                                        <li>Lorem ipsum dolor sit amet.</li>
+                                                                        <li>Lorem ipsum dolor sit amet.</li>
+                                                                        <li>Lorem ipsum dolor sit amet.</li>
+                                                                    </ul> -->
+                        </div>
+                    </div>
+                
+                    <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="1300">
+                        <div class=" box-with-humber">
+                            <h2 class="text-black">PROJECT MANAGEMENT</h2>
+                            <p class="mb-4">We train you on the principles of project management and the 5 step project management model</p>
+                            <!-- <ul class="list-unstyled ul-check primary">
+                                                                        <li>Lorem ipsum dolor sit amet.</li>
+                                                                        <li>Lorem ipsum dolor sit amet.</li>
+                                                                        <li>Lorem ipsum dolor sit amet.</li>
+                                                                    </ul> -->
+                        </div>
+                    </div>
+                
+                    <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="1400">
+                        <div class=" box-with-humber">
+                            <h2 class="text-black">MARKETING FOR NON-MARKETERS</h2>
+                            <p class="mb-4">We introduce you to marketing.</p>
+                            <!-- <ul class="list-unstyled ul-check primary">
+                                                                        <li>Lorem ipsum dolor sit amet.</li>
+                                                                        <li>Lorem ipsum dolor sit amet.</li>
+                                                                        <li>Lorem ipsum dolor sit amet.</li>
+                                                                    </ul> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="1500">
+                        <div class=" box-with-humber">
+                            <h2 class="text-black">FINANCE FOR NON-FINANCE OFFICERS</h2>
+                            <p class="mb-4">We introduce you to fundamental accounting concepts</p>
+                            <!-- <ul class="list-unstyled ul-check primary">
+                                                                        <li>Lorem ipsum dolor sit amet.</li>
+                                                                        <li>Lorem ipsum dolor sit amet.</li>
+                                                                        <li>Lorem ipsum dolor sit amet.</li>
+                                                                    </ul> -->
+                        </div>
+                    </div>
+                
+                    <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="1600">
+                        <div class=" box-with-humber">
+                            <h2 class="text-black">TRAINING NEEDS IDENTIFICATION & ANALYSIS</h2>
+                            <p class="mb-4">This course provides you with benefits of successful TNIA and much more.</p>
+                            <!-- <ul class="list-unstyled ul-check primary">
+                                                                        <li>Lorem ipsum dolor sit amet.</li>
+                                                                        <li>Lorem ipsum dolor sit amet.</li>
+                                                                        <li>Lorem ipsum dolor sit amet.</li>
+                                                                    </ul> -->
+                        </div>
+                    </div>
+                
+                    <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="1700">
+                        <div class=" box-with-humber">
+                            <h2 class="text-black">MODERN OFFICE MANAGEMENT</h2>
+                            <p class="mb-4">We introduce you to basic management functions.</p>
+                            <!-- <ul class="list-unstyled ul-check primary">
+                                                                        <li>Lorem ipsum dolor sit amet.</li>
+                                                                        <li>Lorem ipsum dolor sit amet.</li>
+                                                                        <li>Lorem ipsum dolor sit amet.</li>
+                                                                    </ul> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="1800">
+                        <div class=" box-with-humber">
+                            <h2 class="text-black">MANAGEMENT SKILLS DEVELOPMENT</h2>
+                            <p class="mb-4">We train you on the key concepts in management: Leadership, delegating, planning, organizing, controlling &
+                            management controls.</p>
+                            <!-- <ul class="list-unstyled ul-check primary">
+                                                                                        <li>Lorem ipsum dolor sit amet.</li>
+                                                                                        <li>Lorem ipsum dolor sit amet.</li>
+                                                                                        <li>Lorem ipsum dolor sit amet.</li>
+                                                                                    </ul> -->
+                        </div>
+                    </div>
+                
+                    <div class="col-md-6 col-lg-4">
+                        <div class=" box-with-humber">
+                            <h2 class="text-black"></h2>
+                            <p class="mb-4"></p>
+                            <!-- <ul class="list-unstyled ul-check primary">
+                                                                                        <li>Lorem ipsum dolor sit amet.</li>
+                                                                                        <li>Lorem ipsum dolor sit amet.</li>
+                                                                                        <li>Lorem ipsum dolor sit amet.</li>
+                                                                                    </ul> -->
+                        </div>
+                    </div>
+                
+                    <div class="col-md-6 col-lg-4">
+                        <div class=" box-with-humber">
+                            <h2 class="text-black"></h2>
+                            <p class="mb-4"></p>
+                            <!-- <ul class="list-unstyled ul-check primary">
+                                                                                        <li>Lorem ipsum dolor sit amet.</li>
+                                                                                        <li>Lorem ipsum dolor sit amet.</li>
+                                                                                        <li>Lorem ipsum dolor sit amet.</li>
+                                                                                    </ul> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- <section class="site-section testimonial-wrap" id="testimonials-section">
+            <div class="container">
+                <div class="row mb-5">
+                    <div class="col-12 text-center">
+                        <h3 class="section-sub-title">People Says</h3>
+                        <h2 class="section-title mb-3">Testimonials</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="slide-one-item home-slider owl-carousel">
+                <div>
+                    <div class="testimonial">
+
+                        <blockquote class="mb-5">
+                            <p>&ldquo;Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur unde
+                                reprehenderit aperiam quaerat fugiat repudiandae explicabo animi minima fuga beatae
+                                illum eligendi incidunt consequatur. Amet dolores excepturi earum unde iusto.&rdquo;</p>
+                        </blockquote>
+
+                        <figure class="mb-4 d-flex align-items-center justify-content-center">
+                            <div><img src="{% static 'images/person_3.jpg' %}" alt="Image" class="w-50 img-fluid mb-3"></div>
+                            <p>John Smith</p>
+                        </figure>
+                    </div>
+                </div>
+                <div>
+                    <div class="testimonial">
+
+                        <blockquote class="mb-5">
+                            <p>&ldquo;Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur unde
+                                reprehenderit aperiam quaerat fugiat repudiandae explicabo animi minima fuga beatae
+                                illum eligendi incidunt consequatur. Amet dolores excepturi earum unde iusto.&rdquo;</p>
+                        </blockquote>
+                        <figure class="mb-4 d-flex align-items-center justify-content-center">
+                            <div><img src="{% static 'images/person_2.jpg' %}" alt="Image" class="w-50 img-fluid mb-3"></div>
+                            <p>Christine Aguilar</p>
+                        </figure>
+
+                    </div>
+                </div>
+
+                <div>
+                    <div class="testimonial">
+
+                        <blockquote class="mb-5">
+                            <p>&ldquo;Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur unde
+                                reprehenderit aperiam quaerat fugiat repudiandae explicabo animi minima fuga beatae
+                                illum eligendi incidunt consequatur. Amet dolores excepturi earum unde iusto.&rdquo;</p>
+                        </blockquote>
+                        <figure class="mb-4 d-flex align-items-center justify-content-center">
+                            <div><img src="{% static 'images/person_4.jpg' %}" alt="Image" class="w-50 img-fluid mb-3"></div>
+                            <p>Robert Spears</p>
+                        </figure>
+
+
+                    </div>
+                </div>
+
+                <div>
+                    <div class="testimonial">
+
+                        <blockquote class="mb-5">
+                            <p>&ldquo;Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur unde
+                                reprehenderit aperiam quaerat fugiat repudiandae explicabo animi minima fuga beatae
+                                illum eligendi incidunt consequatur. Amet dolores excepturi earum unde iusto.&rdquo;</p>
+                        </blockquote>
+                        <figure class="mb-4 d-flex align-items-center justify-content-center">
+                            <div><img src="images/person_4.jpg" alt="Image" class="w-50 img-fluid mb-3"></div>
+                            <p>Bruce Rogers</p>
+                        </figure>
+
+                    </div>
+                </div>
+
+            </div>
+        </section> -->
+<!-- 
+        <section class="site-section" id="about-section">
+            <div class="container">
+                <div class="row mb-5">
+
+                    <div class="col-md-5 ml-auto mb-5 order-md-2" data-aos="fade">
+                        <img src="{% static 'images/about_1.jpg' %}" alt="Image" class="img-fluid rounded">
+                    </div>
+                    <div class="col-md-6 order-md-1" data-aos="fade">
+
+                        <div class="row">
+
+
+                            <div class="col-12 mb-4">
+                                <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet
+                                    incidunt magnam corrupti, odit eos harum quaerat nostrum voluptatibus aspernatur
+                                    eligendi accusantium cum, impedit blanditiis voluptate commodi doloribus, nemo
+                                    dignissimos recusandae.</p>
+                            </div>
+                            <div class="col-md-12 mb-md-5 mb-0 col-lg-6">
+                                <div class="unit-4">
+                                    <div class="unit-4-icon mr-4 mb-3"><span class="text-primary icon-adb"></span></div>
+                                    <div>
+                                        <h3>Web &amp; Mobile Specialties</h3>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis
+                                            consect.</p>
+                                        <p class="mb-0"><a href="#">Learn More</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12 mb-md-5 mb-0 col-lg-6">
+                                <div class="unit-4">
+                                    <div class="unit-4-icon mr-4 mb-3"><span
+                                            class="text-primary icon-assignment"></span></div>
+                                    <div>
+                                        <h3>Intuitive Thinkers</h3>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis.
+                                        </p>
+                                        <p class="mb-0"><a href="#">Learn More</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section> -->
+
+
+
+
+        <section class="site-section bg-light" id="contact-section">
+            <div class="container">
+                <div class="row mb-5">
+                    <div class="col-12 text-center">
+                        <h2 class="section-title mb-3">Contact Us Now</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-7 mb-5">
+
+
+
+                        <form action="" method="POST" class="p-5 bg-white">
+                            {% csrf_token %}
+                            <!-- <h2 class="h4 text-black mb-5">Contact Form</h2> -->
+
+                            <div class="row form-group">
+                                <div class="col-md-6 mb-3 mb-md-0">
+                                    <label class="text-black" for="first_name">First Name</label>
+                                    <input type="text" required id="id_first_name" name="first_name" class="form-control">
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="text-black" for="last_name">Last Name</label>
+                                    <input type="text" required id="id_last_name" name="last_name" class="form-control">
+                                </div>
+                            </div>
+
+                            <div class="row form-group">
+
+                                <div class="col-md-12">
+                                    <label class="text-black" for="email">Email</label>
+                                    <input type="email" required id="id_email" name="email" class="form-control">
+                                </div>
+                            </div>
+
+                            <div class="row form-group">
+
+                                <div class="col-md-12">
+                                    <label class="text-black" for="subject">Subject</label>
+                                    <input type="subject" required id="id_subject" name="subject" class="form-control">
+                                </div>
+                            </div>
+
+                            <div class="row form-group">
+                                <div class="col-md-12">
+                                    <label class="text-black" for="message">Message</label>
+                                    <textarea name="message" required name="message" id="id_message" cols="30" rows="7" class="form-control"
+                                        placeholder="Write your notes or questions here..."></textarea>
+                                </div>
+                            </div>
+
+                            <div class="row form-group">
+                                <div class="col-md-12">
+                                    <input type="submit" value="Send Message" class="btn btn-primary btn-md text-white">
+                                </div>
+                            </div>
+
+
+                        </form>
+                    </div>
+                    <div class="col-md-5">
+
+                        <div class="p-4 mb-3 bg-white">
+                            <p class="mb-0 font-weight-bold">Address</p>
+                            <p class="mb-4">P.O Box 1206-00200- NAIROBI, KENYA</p>
+
+                            <p class="mb-0 font-weight-bold">Phone</p>
+                            <p class="mb-4"><a href="tel:711922328">+ 254 711922328</a></p>
+
+                            <p class="mb-0 font-weight-bold">Email Address</p>
+                            <p class="mb-0"><a href="mailto:stafficeconsulting@gmal.com">stafficeconsulting@gmal.com</a></p>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <a href="#contact-section" class="bg-primary py-5 d-block">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md10">
+                        <h2 class="text-white">Let's Get Started</h2>
+                    </div>
+                </div>
+            </div>
+        </a>
+
+        <footer class="site-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-9">
+                        <div class="row">
+                            <div class="col-md-5">
+                                <h2 class="footer-heading mb-4">About Us</h2>
+                                <p>”Staffice Tranning &amp; Consultancy Ltd” being a Reputable and a Professional training oorganization,
+                                we deliberately maintain our pride in expertise training with the most experienced and various
+                                professionals, within the country and around the diaspora</p>
+                            </div>
+                            <div class="col-md-3 ml-auto">
+                                <h2 class="footer-heading mb-4">Quick Links</h2>
+                                <ul class="list-unstyled">
+                                    <li><a href="#about-section">About Us</a></li>
+                                    <li><a href="#services-section">Services</a></li>
+                                    <!-- <li><a href="#">Testimonials</a></li> -->
+                                    <li><a href="#contact-section">Contact Us</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-md-3">
+                                <h2 class="footer-heading mb-4">Follow Us</h2>
+                                <a href="#" class="pl-0 pr-3"><span class="icon-facebook"></span></a>
+                                <a href="#" class="pl-3 pr-3"><span class="icon-twitter"></span></a>
+                                <a href="#" class="pl-3 pr-3"><span class="icon-instagram"></span></a>
+                                <a href="#" class="pl-3 pr-3"><span class="icon-linkedin"></span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <h2 class="footer-heading mb-4">Subscribe Newsletter</h2>
+                        <form action="#" method="post" class="footer-subscribe">
+                            <div class="input-group mb-3">
+                                <input type="text" class="form-control border-secondary text-white bg-transparent"
+                                    placeholder="Enter Email" aria-label="Enter Email" aria-describedby="button-addon2">
+                                <div class="input-group-append">
+                                    <button class="btn btn-primary text-black" type="button"
+                                        id="button-addon2">Send</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="row pt-5 mt-5 text-center">
+                    <div class="col-md-12">
+                        <div class="border-top pt-5">
+                            <p>
+                                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                                Copyright &copy;
+                                <script>document.write(new Date().getFullYear());</script> All rights reserved | This
+                                template is made with <i class="icon-heart" aria-hidden="true"></i> by <a
+                                    href="https://colorlib.com" target="_blank">Colorlib</a>
+                                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </footer>
+
+    </div> <!-- .site-wrap -->
+
+    <script src="{% static 'js/jquery-3.3.1.min.js' %}"></script>
+    <script src="{% static 'js/jquery-migrate-3.0.1.min.js' %}"></script>
+    <script src="{% static 'js/jquery-ui.js' %}"></script>
+    <script src="{% static 'js/popper.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'js/owl.carousel.min.js' %}"></script>
+    <script src="{% static 'js/jquery.stellar.min.js' %}"></script>
+    <script src="{% static 'js/jquery.countdown.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap-datepicker.min.js' %}"></script>
+    <script src="{% static 'js/jquery.easing.1.3.js' %}"></script>
+    <script src="{% static 'js/aos.js' %}"></script>
+    <script src="{% static 'js/jquery.fancybox.min.js' %}"></script>
+    <script src="{% static 'js/jquery.sticky.js' %}"></script>
+
+
+    <script src="{% static 'js/main.js' %}"></script>
+
+</body>
+
+</html>
